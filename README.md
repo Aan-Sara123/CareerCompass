@@ -25,20 +25,20 @@
 ## 🚀 Getting Started
 
 1. **Clone the repository**:
-bash
 - git clone https://github.com/Aan-Sara123/CareerCompass.git
 
-Install dependencies:
-bash
+2. **Install dependencies**:
 - flutter pub get
 
-Run the app:
-bash
+3. **Run the app**:
 - flutter run
-
+  
 Please ensure that you have the Flutter SDK installed and an emulator or device connected.
 
+---
 
-📬 Contact
-GitHub: https://github.com/Aan-Sara123
-Email: aansarabiju@gmail.com
+## 📬 Contact
+- GitHub: https://github.com/Aan-Sara123
+- Email: aansarabiju@gmail.com
+
+---
