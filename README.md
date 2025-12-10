@@ -6,20 +6,19 @@
 
 ## 🌟 Key Features
 
-- **Skill-Based Tests**: Assess your strengths and areas to improve.  
-- **Personalized Career Recommendations**: Get tailored suggestions based on your skills and interests.  
-- **Interactive Dashboard**: Track your progress, scores, and recommendations.  
-- **Career Counsellor Access**: Connect with experts for guidance and mentorship.  
-- **Firebase Integration**: Secure storage for user profiles, test scores, and recommendations.  
+- 📝 **Skill-Based Tests**: Assess your strengths and areas to improve.  
+- 🎯 **Personalized Career Recommendations**: Tailored suggestions based on your skills and interests.  
+- 📊 **Interactive Dashboard**: Track your progress, scores, and recommendations.  
+- 💬 **Career Counsellor Access**: Connect with experts for guidance and mentorship.  
+- 🔒 **Firebase Integration**: Secure storage for user profiles, test scores, and recommendations.  
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: Flutter (Dart)  
-- **Backend**: Firebase Authentication & Firestore  
-- **State Management**: Provider / setState  
-- **Version Control**: Git & GitHub  
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat-square&logo=dart&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
 
 ---
 
@@ -29,22 +28,20 @@
 
 ```bash
 git clone https://github.com/Aan-Sara123/CareerCompass.git
+Install dependencies:
 
-2. **Install dependencies**:
-
+bash
+Copy code
 flutter pub get
+Run the app:
 
-
-3. **Run the app**:
-
+bash
+Copy code
 flutter run
-
-
-Ensure that you have Flutter SDK installed and an emulator or device connected.
+Ensure you have Flutter SDK installed and an emulator or device connected.
 
 
 📬 Contact
-
 GitHub: https://github.com/Aan-Sara123
 
 Email: aansarabiju@gmail.com
