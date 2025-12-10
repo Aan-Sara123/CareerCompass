@@ -1,35 +1,26 @@
-<<<<<<< HEAD
-# careercompass
+# CareerCompass 🚀
 
-A new Flutter project.
+**CareerCompass** is a Flutter & Firebase mobile app designed to help students and professionals discover their ideal career paths. With skill-based assessments, personalized recommendations, and access to career counsellors, CareerCompass guides you toward a fulfilling career journey.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🌟 Key Features
 
-A few resources to get you started if this is your first Flutter project:
+- **Skill-Based Tests**: Assess your strengths and areas to improve.  
+- **Personalized Career Recommendations**: Get tailored suggestions based on your skills and interests.  
+- **Interactive Dashboard**: Track your progress, scores, and recommendations.  
+- **Career Counsellor Access**: Connect with experts for guidance and mentorship.  
+- **Firebase Integration**: Secure storage for user profiles, test scores, and recommendations.  
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-=======
-# careercompass
+## 🛠️ Tech Stack
 
-A new Flutter project.
+- **Frontend**: Flutter (Dart)  
+- **Backend**: Firebase Authentication & Firestore  
+- **State Management**: Provider / setState  
+- **Version Control**: Git & GitHub  
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
->>>>>>> 66a19bbd3c3a56d06389c788f18944f8295bfa57
+## 📂 Project Structure
