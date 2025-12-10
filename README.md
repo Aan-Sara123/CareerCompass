@@ -22,3 +22,29 @@
 - **Version Control**: Git & GitHub  
 
 ---
+
+## 🚀 Getting Started
+
+1. **Clone the repository**:
+
+```bash
+git clone https://github.com/Aan-Sara123/CareerCompass.git
+
+2. **Install dependencies**:
+
+flutter pub get
+
+
+3. **Run the app**:
+
+flutter run
+
+
+Ensure that you have Flutter SDK installed and an emulator or device connected.
+
+
+📬 Contact
+
+GitHub: https://github.com/Aan-Sara123
+
+Email: aansarabiju@gmail.com
