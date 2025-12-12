@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'models/question.dart';
+import 'database_service.dart';
 
 class SkillTestPage extends StatefulWidget {
   const SkillTestPage({super.key});
@@ -31,6 +32,8 @@ class _SkillTestPageState extends State<SkillTestPage> {
   int _score = 0;
   int? _selectedOption;
 
+  final DatabaseService _dbService = DatabaseService();
+
   void _nextQuestion() {
     if (_selectedOption != null &&
         _selectedOption ==
@@ -48,9 +51,12 @@ class _SkillTestPageState extends State<SkillTestPage> {
     });
   }
 
-  void _finishTest() {
-    // Return score to previous page (Dashboard)
-    Navigator.pop(context, _score);
+  Future<void> _finishTest() async {
+    await _dbService.saveSkillScore(_score, _questions.length);
+
+    if (mounted) {
+      Navigator.pop(context, _score);
+    }
   }
 
   @override

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'skill_test.dart';
+import 'database_service.dart';
 
 class DashboardPage extends StatefulWidget {
   final String userName;
@@ -11,8 +12,26 @@ class DashboardPage extends StatefulWidget {
 }
 
 class _DashboardPageState extends State<DashboardPage> {
-  final List<int> _pastScores = [3, 2, 4];
+  final DatabaseService _dbService = DatabaseService();
+
+  List<int> _pastScores = [];
   int? _latestScore;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadScores();
+  }
+
+  Future<void> _loadScores() async {
+    final scores = await _dbService.getPastScores();
+    if (!mounted) return;
+
+    setState(() {
+      _pastScores = scores;
+      if (_pastScores.isNotEmpty) _latestScore = _pastScores.first;
+    });
+  }
 
   void _startSkillTest() async {
     final result = await Navigator.push(
@@ -21,14 +40,13 @@ class _DashboardPageState extends State<DashboardPage> {
     );
 
     if (result != null && result is int) {
-      setState(() {
-        _latestScore = result;
-        _pastScores.add(result);
-      });
       if (!mounted) return;
+
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('You scored $result in the test!')),
+        SnackBar(content: Text('You scored $result!')),
       );
+
+      _loadScores(); // refresh UI after new score
     }
   }
 
@@ -48,8 +66,9 @@ class _DashboardPageState extends State<DashboardPage> {
             if (_latestScore != null) ...[
               const SizedBox(height: 12),
               Text(
-                'Latest Score: $_latestScore / 3',
-                style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
+                'Latest Score: $_latestScore',
+                style:
+                    const TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
               ),
             ],
             const SizedBox(height: 24),
@@ -59,16 +78,23 @@ class _DashboardPageState extends State<DashboardPage> {
             ),
             const SizedBox(height: 12),
             Expanded(
-              child: ListView.builder(
-                itemCount: _pastScores.length,
-                itemBuilder: (context, index) {
-                  return ListTile(
-                    leading: const Icon(Icons.check_circle_outline),
-                    title: Text('Test ${index + 1}'),
-                    trailing: Text('${_pastScores[index]} / 3'),
-                  );
-                },
-              ),
+              child: _pastScores.isEmpty
+                  ? const Center(
+                      child: Text(
+                        "No scores yet. Start your first skill test!",
+                        style: TextStyle(fontSize: 16),
+                      ),
+                    )
+                  : ListView.builder(
+                      itemCount: _pastScores.length,
+                      itemBuilder: (context, index) {
+                        return ListTile(
+                          leading: const Icon(Icons.check_circle_outline),
+                          title: Text('Test ${index + 1}'),
+                          trailing: Text('${_pastScores[index]}'),
+                        );
+                      },
+                    ),
             ),
             const SizedBox(height: 24),
             Center(
