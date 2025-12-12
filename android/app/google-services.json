@@ -12,7 +12,20 @@
           "package_name": "com.example.careercompass"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "1041878879585-vrdeokf6i4a7pt24n8knmvvbr14i4s3m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.careercompass",
+            "certificate_hash": "03fae739d8074dd50cc37f5d435a7bcf0073a2bf"
+          }
+        },
+        {
+          "client_id": "1041878879585-ls1o0f3g2p3lbqqtolljmmkhmc9hgv1d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyAWgDsXURJzwBZYOSsviqII2NJxbQ5gj6o"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1041878879585-ls1o0f3g2p3lbqqtolljmmkhmc9hgv1d.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1041878879585-ofd6go8spb225sv2l6u7akgs4aqc0v3i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.careercompass"
+              }
+            }
+          ]
         }
       }
     }

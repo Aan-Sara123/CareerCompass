@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'login/email_login.dart';
 import 'login/phone_login.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(const CareerCompassApp());
 }
 
@@ -14,9 +18,7 @@ class CareerCompassApp extends StatelessWidget {
     return MaterialApp(
       title: 'CareerCompass',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: ThemeData(primarySwatch: Colors.blue),
       home: const LoginSelectionPage(),
     );
   }
@@ -40,7 +42,9 @@ class LoginSelectionPage extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const EmailLoginPage()),
+                    MaterialPageRoute(
+                      builder: (context) => const EmailLoginPage(),
+                    ),
                   );
                 },
                 style: ElevatedButton.styleFrom(
@@ -53,7 +57,9 @@ class LoginSelectionPage extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const PhoneLoginPage()),
+                    MaterialPageRoute(
+                      builder: (context) => const PhoneLoginPage(),
+                    ),
                   );
                 },
                 style: ElevatedButton.styleFrom(
