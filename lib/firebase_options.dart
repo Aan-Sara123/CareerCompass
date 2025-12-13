@@ -41,7 +41,7 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyD5T8g2QEwihPEVBg_bvk73sY6XVlgIagA',
+    apiKey: 'AIzaSyBjZwcOLlnxkuibmawNfWR-0Z5XRtCYp6s',
     appId: '1:1041878879585:web:c87a659260e48e71e10920',
     messagingSenderId: '1041878879585',
     projectId: 'careercompass-993db',
@@ -51,7 +51,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAWgDsXURJzwBZYOSsviqII2NJxbQ5gj6o',
+    apiKey: 'AIzaSyCBvSsbo7VqvGdbhnEazsTn35EWj93_1YY',
     appId: '1:1041878879585:android:688724f88ef17df3e10920',
     messagingSenderId: '1041878879585',
     projectId: 'careercompass-993db',
@@ -59,25 +59,29 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBMZ4zlruyKn7_CQ18ZglwigJz-gx4F954',
+    apiKey: 'AIzaSyDAuHi3KkrkLQj2CESv2YLBPz6sL_sehd4',
     appId: '1:1041878879585:ios:05de0574bd3cccebe10920',
     messagingSenderId: '1041878879585',
     projectId: 'careercompass-993db',
     storageBucket: 'careercompass-993db.firebasestorage.app',
+    androidClientId: '1041878879585-vrdeokf6i4a7pt24n8knmvvbr14i4s3m.apps.googleusercontent.com',
+    iosClientId: '1041878879585-ofd6go8spb225sv2l6u7akgs4aqc0v3i.apps.googleusercontent.com',
     iosBundleId: 'com.example.careercompass',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyBMZ4zlruyKn7_CQ18ZglwigJz-gx4F954',
+    apiKey: 'AIzaSyDAuHi3KkrkLQj2CESv2YLBPz6sL_sehd4',
     appId: '1:1041878879585:ios:05de0574bd3cccebe10920',
     messagingSenderId: '1041878879585',
     projectId: 'careercompass-993db',
     storageBucket: 'careercompass-993db.firebasestorage.app',
+    androidClientId: '1041878879585-vrdeokf6i4a7pt24n8knmvvbr14i4s3m.apps.googleusercontent.com',
+    iosClientId: '1041878879585-ofd6go8spb225sv2l6u7akgs4aqc0v3i.apps.googleusercontent.com',
     iosBundleId: 'com.example.careercompass',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyD5T8g2QEwihPEVBg_bvk73sY6XVlgIagA',
+    apiKey: 'AIzaSyCVNfIKRZcPeRGQ188iFUqh2XKknZuf4sI',
     appId: '1:1041878879585:web:09ff476f05e71bace10920',
     messagingSenderId: '1041878879585',
     projectId: 'careercompass-993db',
@@ -85,4 +89,5 @@ class DefaultFirebaseOptions {
     storageBucket: 'careercompass-993db.firebasestorage.app',
     measurementId: 'G-W1FBPWEV3Z',
   );
+
 }
